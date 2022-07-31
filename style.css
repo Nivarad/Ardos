@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  max-height: 100vh;
   line-break: auto;
   background: url("./images/background.jpg") no-repeat center center/cover;
   background-attachment: fixed;
@@ -44,7 +44,7 @@ img {
 .topnav {
   background-color: #000;
   overflow: hidden;
-  width: 100vw;
+  max-width: 100vw;
   top: 0;
   position: fixed;
 
@@ -74,15 +74,15 @@ img {
   transform: scale(0.9);
   clear: both;
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
   top: 8vh;
   flex-direction: column;
 }
 
 .welcome-wrapper {
   margin: 8vh 0 0 6vw;
-  width: 100vw;
+  max-width: 100vw;
 }
 
 .welcome-content {
@@ -90,7 +90,7 @@ img {
   color: #b3afaa;
   padding: 8px 8px 8px 8px;
 
-  width: 100vw;
+  max-width: 100vw;
 }
 .welcome-content h2 {
   font-size: 1.6rem;
@@ -99,15 +99,15 @@ img {
 }
 
 .welcome-content img {
-  height: 8vh;
-  width: 5.6vw;
+  max-height: 8vh;
+  max-width: 5.6vw;
   padding: 12px 12px 12px 12px;
 }
 
 .about-wrapper {
   max-width: 100vw;
   margin: 18vh;
-  height: 100%;
+  max-height: 100%;
 }
 .about-header {
   padding: 0 0 8vh 0;
@@ -121,8 +121,8 @@ img {
 }
 .hacker {
   margin: -2% 5% 0 0;
-  height: 64vh;
-  width: 40vw;
+  max-height: 64vh;
+  max-width: 40vw;
 }
 .about-content {
   color: #b3afaa;
@@ -159,7 +159,7 @@ img {
   margin: 0 0vh 0;
 }
 .skills h1 {
-  width: 100vh;
+  max-width: 100vh;
 
   justify-content: center;
   margin: 20vh 0 10vh 50%;
@@ -291,8 +291,8 @@ img {
 
 .item {
   position: relative;
-  height: 19rem;
-  width: 300px;
+  max-height: 19rem;
+  max-width: 30rem;
 
   margin: 20px 20px 20px 20px;
   background-color: lightGrey;
@@ -314,8 +314,8 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   z-index: 1;
 }
 .item:hover .item__overlay {
@@ -330,8 +330,8 @@ img {
 }
 
 .project_img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   display: block;
   object-fit: cover;
   padding: 0;
