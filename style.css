@@ -46,7 +46,6 @@ img {
 .topnav {
   background-color: #000;
   overflow: hidden;
-  max-width: 100vw;
   top: 0;
   position: fixed;
   width: 100%;
@@ -311,9 +310,6 @@ img {
   padding: 1rem;
 }
 
-.item:hover {
-  transform: scale(1.1);
-}
 .item a {
   position: absolute;
   top: 0;
@@ -335,10 +331,10 @@ img {
 }
 
 .project_img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: fill;
   padding: 0;
   margin: 0;
 }
@@ -365,7 +361,7 @@ img {
   margin: 0;
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+@media only screen and (min-width: 941px) and (max-width: 1280px) {
   .about-header {
     padding: 0 0 8vh 0;
     margin: 25vh 0 4vh 62%;
@@ -392,17 +388,16 @@ img {
     gap: 1rem;
   }
   .project_img {
-    max-height: 100%;
     display: block;
-    object-fit: cover;
+    object-fit: fill;
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 80%;
+    height: 100%;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 600px) and (max-width: 940px) {
   .welcome-content img {
     max-width: none;
     max-height: none;
@@ -465,5 +460,111 @@ img {
     margin: 6vh 0 0 4vw;
   }
 }
-@media only screen and (min-width: 480px) and (max-width: 600px) {
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .topnav a {
+    font-size: 1.2rem;
+    float: left;
+    color: #b3afaa;
+    text-align: center;
+    padding: 12px 4vw 1px 2vw;
+  }
+  .welcome-wrapper {
+    margin: 3vh 0 0 6vw;
+  }
+  .welcome-content img {
+    max-width: none;
+    max-height: none;
+    width: 14vw;
+    height: 10vh;
+    background-color: transparent;
+    border: #000;
+    padding: 2px;
+    border-radius: 50%;
+  }
+  .welcome-content h2 {
+    font-size: 1.2rem;
+  }
+  .welcome-content h1 {
+    font-size: 1.4rem;
+  }
+  .about-header {
+    padding: 0 0 8vh 0;
+    margin: 50vh 0 -10% 10%;
+    font-size: 4rem;
+  }
+  .hacker {
+    margin: -2% 5% 0 0;
+    max-height: 64vh;
+    max-width: 40vw;
+    position: absolute;
+    opacity: 0;
+  }
+  .about-wrapper {
+    margin: 0;
+  }
+  .about-content {
+    color: #b3afaa;
+    /* padding: 16px; */
+    line-height: 1.5;
+    font-size: 1rem;
+    /* transform: translateX(-10%); */
+    line-break: normal;
+    max-width: 80vw;
+    margin: 2% 8% 5% 15%;
+  }
+  .files {
+    margin: 6vh 0 0 0;
+  }
+  .file {
+    width: max-content;
+  }
+  .skills {
+    position: relative;
+  }
+  .skills h1 {
+    max-width: 100vw;
+    justify-content: center;
+    margin: 20vh 0 0 35vw;
+
+    font-size: 4rem;
+    color: #fff;
+  }
+  .page-contain {
+    margin-top: -30%;
+  }
+  .data-card {
+    padding: 0 5px 0 5px;
+    width: 16rem;
+    height: 16rem;
+  }
+  .data-card p {
+    font-size: 0.9rem;
+  }
+  .projects-header {
+    /* margin: 10% 0 10% 50%; */
+
+    margin-left: 37%;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: unset;
+  }
+  .item {
+    max-width: unset;
+    max-height: unset;
+    height: 27vh;
+    width: auto;
+  }
+  .item h3 {
+    font-size: 1em;
+  }
+  .project_img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: fill;
+    padding: 0;
+    margin: 0;
+  }
 }
