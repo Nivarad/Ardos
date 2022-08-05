@@ -294,9 +294,9 @@ img {
 
 .item {
   position: relative;
-  max-height: 19rem;
+  max-height: 25rem;
   max-width: 30rem;
-
+  min-height: 15rem;
   margin: 2vh 2vw 2vh 2vw;
   background-color: lightGrey;
   overflow-y: hidden;
@@ -307,7 +307,7 @@ img {
   margin: 0;
   display: block;
   background-color: #61de2a;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 .item a {
@@ -342,7 +342,7 @@ img {
 .item__overlay {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /*justify-content: center; */
   height: 95%;
   position: absolute;
   width: 100%;
