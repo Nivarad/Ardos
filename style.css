@@ -329,7 +329,9 @@ img {
   background-color: #000;
   color: #fff;
 }
-
+.item:hover {
+  cursor: pointer;
+}
 .project_img {
   width: 100%;
   height: 100%;
