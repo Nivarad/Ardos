@@ -60,8 +60,9 @@ img {
   font-size: 1.6rem;
 }
 .topnav a:hover {
-  color: #fff;
+  color: #91919c;
 }
+
 .topnav a.active {
   color: #61de2a;
 }
@@ -294,9 +295,9 @@ img {
 
 .item {
   position: relative;
-  max-height: 25rem;
-  max-width: 30rem;
-  min-height: 15rem;
+  max-height: 30rem;
+  max-width: 35rem;
+  min-height: 20rem;
   margin: 2vh 2vw 2vh 2vw;
   background-color: lightGrey;
   overflow-y: hidden;
