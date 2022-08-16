@@ -73,7 +73,7 @@ img {
 
 .flex-box-container {
   margin-top: 16vh;
-  transform: scale(1);
+  transform: scale(0.9);
   clear: both;
   display: flex;
   max-width: 100vw;
@@ -288,8 +288,9 @@ img {
 /**************************************************/
 
 .grid {
+  margin: 0 6vw 0 6vw;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10rem;
 }
 
